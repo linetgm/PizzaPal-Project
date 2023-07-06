@@ -1,18 +1,124 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>PizzaPal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/scripts.js"></script>
+	<title>PizzaPal</title>
 </head>
 <body>
-   <div class="title"><h1>PizzaPal</h1>
-    <h2>Exclusively for students!</h2>
- </div>
- 
-   
-</body>
-</html>
+		<div class = whole>
+			<div class="header">
+				<p>PizzaPal<p>
+			</div>
+			<div class="row">
+				<div class="col-md-6 preference">
+						<p style="color:blue"> Order your preferred pizza Now! </p><br><br>
+						<form id="form1">
+							<div id="size">
+
+								<h2> Preferred Size</h2>
+								<div id="sizeSelection">
+									<input type="radio" name="size" value="small" id="small"> Small [300]<br>
+									<input type="radio" name="size" value="medium" id="medium"> Medium [400]<br>
+									<input type="radio" name="size" value="large" id="large"> Large [500]<br>
+								</div>
+							</div>
+							<br>
+							<div class="pizza-type">
+								<h2> Pizza type</h2>
+								<div id="typeSelection">
+									<input type="radio" name="type" value="stuffed" id="stuffed"> Stuffed [200]<br>
+									<input type="radio" name="type" value="crusted" id="crusted"> Crusted [250]<br>
+									<input type="radio" name="type" value="glutten" id="glutten"> Glutten-Free [300]<br>
+								</div>
+
+							</div>
+							<br>
+							<div class="pizza-type">
+								<h2> Pizza Crustings [Ksh 50 each]</h2>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" name = "crust" value="Pepperoni" id="Pepperoni">Pepperoni<br>
+									</label>
+								</div>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" name = "crust" value="Onions" id="Onions">Onions<br>
+									</label>
+								</div>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" name = "crust" value="Bacon" id="Bacon">Bacon<br>
+									</label>
+								</div>
+							</div>
+						</form>
+						<br>
+						<button type="button" class="btn btn-outline-primary" id="submit">Submit order</button>
+
+						<h3 style="color: white"></h3>
+
+
+					</div>
+				<div class="col-md-6 preference2">
+
+						<div class="serve">
+							<h1> Here to serve you!</h1>
+							<p> Our pizza are custom made to suit your taste & preference</p>
+							<h2> Thank you!</h2>
+
+						</div>
+						<div class="Order">
+							<h4>see your ordered pizza below!<h4>
+							<table class="selection" >
+								<tr> <td span="2">Your Selections</td></tr>
+								<tr>
+									<td> Size:</td>&nbsp <td id="outputSize"></td>
+								</tr>
+								<tr>
+									<td> Type:</td><td id="outputType"></td>
+								</tr>
+								<tr>
+
+									<td> Crusting:</td><td id="outputCrusting"></td>
+								</tr>
+								<tr class="totalCost">
+									<td> Total cost</td> <td id="price"></td>
+								</tr>
+								<tr>
+									<td></td><td><button type="button" class="btn btn-outline-primary" id="deliver">Deli
+									=er</button></td>
+								</tr>
+
+							</table>
+						</div>
+						<div class="location">
+							<form>
+								<h4> Location details</h4>
+
+							<label>Estate:</label>
+							<input type="text" name="adress" placeholder="estate "> <br><br>
+							<label>Phone Number:</label>
+							<input type="Number" name="adress" placeholder=" "> <br><br>
+							<button type="button" class="btn btn-outline-primary" id="deliver-now" style="background-color:red"> Have it delivered</button>
+							</form>
+
+
+
+						</div>
+					</div>
+
+
+			</div>
+
+
+
+
+		</div>
+
+
+
+	</body>
+	</html>
