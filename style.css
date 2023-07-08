@@ -1,110 +1,107 @@
-/* style.css */
-
+/* Set the background color to black */
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
+  background-color: black;
+}
 
-  .header {
-    font-size: 36px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ff4081;
-  }
-  
-  .whole {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  
-  .preference {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .preference2 {
-    flex: 1;
-  }
-  
-  .pizza-type h2 {
-    margin-bottom: 10px;
-  }
-  
-  .form-check-inline {
-    margin-right: 10px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    background-color: blue;
-  }
-  
-  .btn-outline-primary {
-    color: blue;
-    background-color: transparent;
-    border: 2px solid blue;
-  }
-  
-  .serve h1 {
-    margin-bottom: 10px;
-  }
-  
-  .Order h4 {
-    margin-bottom: 10px;
-  }
-  
-  .selection {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-  }
-  
-  .selection td {
-    padding: 5px 10px;
-    border: 1px solid white;
-  }
-  
-  .totalCost {
-    font-weight: bold;
-  }
-  
-  .location form {
-    margin-top: 20px;
-  }
-  
-  .location label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .location input[type="text"],
-  .location input[type="number"] {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  
-  #deliver-now {
-    background-color: red;
-  }
-  
-  /* Add more styles as needed */
-  
-  
+/* Style the header */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 48px;
+}
+
+/* Style the content */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  color: white;
+  font-family: "Helvetica", sans-serif;
+}
+
+.preference {
+  width: 45%;
+}
+
+.preference2 {
+  width: 45%;
+}
+
+.preference p {
+  color: blue;
+  font-size: 18px;
+}
+
+.preference h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pizza-type {
+  margin-bottom: 20px;
+}
+
+.pizza-type input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.serve {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.serve h1 {
+  font-size: 36px;
+}
+
+.Order {
+  margin-bottom: 20px;
+}
+
+.Order h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.selection {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; /* Added margin to the table */
+}
+
+.selection td {
+  padding: 5px;
+  border: 1px solid white; /* Added border to the table cells */
+}
+
+.totalCost {
+  font-weight: bold;
+}
+
+.location {
+  margin-bottom: 20px;
+}
+
+.location h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.location label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.location input[type="text"],
+.location input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Add more font styles here if needed */
