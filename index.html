@@ -5,6 +5,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<header>
+        <nav>
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
     <h1>PizzaPal - Order Your Pizza</h1>
 	<form id="pizza-form">
         <h2>Your Selections</h2>
@@ -24,3 +34,22 @@
         <br>
         <input type="submit" value="Submit Order">
     </form>
+	<table id="order-table">
+        <caption>Order Summary</caption>
+        <tr>
+            <th>Size:</th>
+            <td id="size-selection"></td>
+        </tr>
+        <tr>
+            <th>Type:</th>
+            <td id="type-selection"></td>
+        </tr>
+        <tr>
+            <th>Crustings:</th>
+            <td id="crustings-selection"></td>
+        </tr>
+        <tr>
+            <th>Total cost:</th>
+            <td id="total-cost"></td>
+        </tr>
+    </table>
