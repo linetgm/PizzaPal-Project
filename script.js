@@ -7,15 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
       const sizeSelect = document.getElementById('size');
       const typeSelect = document.getElementById('type');
 
-       // Populate size options
-       data.pizzas.sizes.forEach(size => {
+      // Populate size options
+      data.pizzas.sizes.forEach(size => {
         const option = document.createElement('option');
         option.value = size.price;
         option.textContent = `${size.name} [$${size.price}]`;
         sizeSelect.appendChild(option);
       });
 
-      / Populate type options
+       // Populate type options
       data.pizzas.types.forEach(type => {
         const option = document.createElement('option');
         option.value = type.price;

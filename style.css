@@ -1,107 +1,106 @@
-/* Set the background color to black */
-body {
-  background-color: black;
+/* Reset default margin and padding */
+body, h1, h2, table, form, p {
+  margin: 0;
+  padding: 0;
 }
 
-/* Style the header */
-.header {
-  text-align: center;
-  padding: 20px;
+/* Navbar styles */
+header {
+  background-color: #333;
+  height: 60px;
 }
 
-.header h1 {
-  color: white;
-  font-family: "Arial", sans-serif;
-  font-size: 48px;
-}
-
-/* Style the content */
-.row {
+.navbar {
   display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  color: white;
-  font-family: "Helvetica", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.preference {
-  width: 45%;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-.preference2 {
-  width: 45%;
-}
-
-.preference p {
-  color: blue;
-  font-size: 18px;
-}
-
-.preference h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.pizza-type {
-  margin-bottom: 20px;
-}
-
-.pizza-type input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-.serve {
+/* Main content styles */
+h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
-.serve h1 {
-  font-size: 36px;
+#pizza-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.Order {
-  margin-bottom: 20px;
-}
-
-.Order h4 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.selection {
-  width: 100%;
+#order-table {
+  margin: 40px auto;
   border-collapse: collapse;
-  margin-bottom: 20px; /* Added margin to the table */
+  width: 400px;
 }
 
-.selection td {
-  padding: 5px;
-  border: 1px solid white; /* Added border to the table cells */
+#order-table th {
+  text-align: left;
+  padding: 8px;
 }
 
-.totalCost {
-  font-weight: bold;
+#order-table td {
+  padding: 8px;
 }
 
-.location {
-  margin-bottom: 20px;
+#delivery-details {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
 }
 
-.location h4 {
-  font-size: 24px;
-  margin-bottom: 10px;
+/* Footer styles */
+footer {
+  background-color: #f4f4f4;
+  height: 60px;
 }
 
-.location label {
-  display: block;
-  margin-bottom: 5px;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.location input[type="text"],
-.location input[type="number"] {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
+.footer p {
+  color: #666;
 }
 
-/* Add more font styles here if needed */
+
+
+
+
+
+#delivery-details input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#pizza-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pizza-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
