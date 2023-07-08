@@ -1,0 +1,15 @@
+{
+    "pizzas": {
+      "sizes": [
+        { "name": "Smallest", "price": 300 },
+        { "name": "Medium", "price": 400 },
+        { "name": "Large", "price": 500 }
+      ],
+      "types": [
+        { "name": "Stuffed", "price": 200 },
+        { "name": "Crusted", "price": 250 },
+        { "name": "Gluten-Free", "price": 300 }
+      ]
+    }
+  }
+  
