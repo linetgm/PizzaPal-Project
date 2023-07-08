@@ -6,3 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(data => {
       const sizeSelect = document.getElementById('size');
       const typeSelect = document.getElementById('type');
+      
+       // Populate size options
+       data.pizzas.sizes.forEach(size => {
+        const option = document.createElement('option');
+        option.value = size.price;
+        option.textContent = `${size.name} [$${size.price}]`;
+        sizeSelect.appendChild(option);
+      });
